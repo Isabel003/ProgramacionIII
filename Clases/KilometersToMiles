@@ -1,0 +1,18 @@
+def convert():
+    try:
+        km=(input("Ingresar distancia en kilometros: "))
+
+        if km.isnumeric():
+            distancia=float(km)
+            if  distancia>=0:
+                miles=distancia * 0.621371
+                print (f"La distancia es de {distancia}  kilómetros y equivalente a {miles}  millas")
+            else:
+                print ("Error, la distancia debe positiva")
+        else:
+          print ("Error, ingrese una distancia numerica")
+    
+    except ValueError as e:
+        print(e)
+
+convert()

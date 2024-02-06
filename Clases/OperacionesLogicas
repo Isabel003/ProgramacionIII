@@ -1,0 +1,20 @@
+#Ejemplo de operador and:
+condicion_and = (5>3) and (10<20)
+print (condicion_and)
+
+#Ejemplo de operacion or:
+condicion_or=(5>3) or (10>20)
+print("Envalacion logica del or es: ", condicion_or)
+
+def puede_votar(edad):
+    return edad>=18
+try:
+    edad_usuario=int(input("Ingresa tu edad: "))
+    if puede_votar(edad_usuario):
+        print("Puedes votar")
+    else: 
+        print("Lo siento no puede votar")
+except ValueError:
+    print("Por favor, ingresa un numero de edad valida")
+
+    

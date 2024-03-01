@@ -2,10 +2,10 @@ class Stack:
     def __init__(self):
         self.items = []
 
-    def push(self, item):
+    def push(self, item): # Método para añadir elementos a la pila# Método para añadir elementos a la pila
         self.items.append(item)
 
-    def pop(self):
+    def pop(self): # Método para eliminar y devolver el elemento superior de la pila
         if not self.is_empty():
             return self.items.pop()
         else:
